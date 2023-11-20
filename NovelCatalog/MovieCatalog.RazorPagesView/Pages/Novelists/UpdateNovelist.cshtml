@@ -1,0 +1,43 @@
+﻿@page "{id:int}"
+@model NovelCatalog.RazorPagesView.Pages.Novelists.UpdateNovelistModel
+@{
+    ViewData["Title"] = "Update novelist";
+}
+
+<div class="container">
+    <form method="post">
+        <div class="form-group row">
+            <label for="FirstName" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="Enter first name..." value="@Model.novelists.FirstName">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="LastName" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Enter last name..." value="@Model.novelists.LastName">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="DateOfBirth" class="col-sm-2 col-form-label">Date of Birth</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="DateOfBirth" name="DateOfBirth" value="@Model.novelists.DateOfBirth.ToString("yyyy-MM-dd")">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="ImageUrl" class="col-sm-2 col-form-label">Image URL</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="ImageUrl" name="ImageUrl" placeholder="Enter image url" value="@Model.novelists.ImageUrl">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="submit" class="btn btn-primary" value="Update" />
+            </div>
+        </div>
+    </form>
+</div>

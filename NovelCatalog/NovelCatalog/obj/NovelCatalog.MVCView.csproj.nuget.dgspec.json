@@ -1,0 +1,297 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog\\NovelCatalog.MVCView.csproj": {}
+  },
+  "projects": {
+    "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj",
+        "projectName": "NovelCatalog.Application",
+        "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj",
+        "packagesPath": "C:\\Users\\Intel-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj": {
+                "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj",
+        "projectName": "NovelCatalog.Domain",
+        "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj",
+        "packagesPath": "C:\\Users\\Intel-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog.EfPersistence\\NovelCatalog.EfPersistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog.EfPersistence\\NovelCatalog.EfPersistence.csproj",
+        "projectName": "NovelCatalog.EfPersistence",
+        "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog.EfPersistence\\NovelCatalog.EfPersistence.csproj",
+        "packagesPath": "C:\\Users\\Intel-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog.EfPersistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj": {
+                "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj"
+              },
+              "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj": {
+                "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog\\NovelCatalog.MVCView.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog\\NovelCatalog.MVCView.csproj",
+        "projectName": "NovelCatalog.MVCView",
+        "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog\\NovelCatalog.MVCView.csproj",
+        "packagesPath": "C:\\Users\\Intel-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Intel-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj": {
+                "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj"
+              },
+              "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog.EfPersistence\\NovelCatalog.EfPersistence.csproj": {
+                "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\NovelCatalog.EfPersistence\\NovelCatalog.EfPersistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AjaxControlToolkit": {
+              "target": "Package",
+              "version": "[20.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

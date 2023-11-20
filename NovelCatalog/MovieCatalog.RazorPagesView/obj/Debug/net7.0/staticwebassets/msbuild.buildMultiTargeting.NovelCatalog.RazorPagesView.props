@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NovelCatalog.RazorPagesView.props" />
+</Project>

@@ -1,0 +1,17 @@
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\NovelCatalog.EfPersistence.csproj.AssemblyReference.cache
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\NovelCatalog.EfPersistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\NovelCatalog.EfPersistence.AssemblyInfoInputs.cache
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\NovelCatalog.EfPersistence.AssemblyInfo.cs
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\NovelCatalog.EfPersistence.csproj.CoreCompileInputs.cache
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\bin\Debug\net7.0\NovelCatalog.EfPersistence.deps.json
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\bin\Debug\net7.0\NovelCatalog.EfPersistence.dll
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\bin\Debug\net7.0\NovelCatalog.EfPersistence.pdb
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\bin\Debug\net7.0\NovelCatalog.Application.dll
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\bin\Debug\net7.0\NovelCatalog.Domain.dll
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\bin\Debug\net7.0\NovelCatalog.Application.pdb
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\bin\Debug\net7.0\NovelCatalog.Domain.pdb
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\NovelCatalog.EfPersistence.csproj.CopyComplete
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\NovelCatalog.EfPersistence.dll
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\refint\NovelCatalog.EfPersistence.dll
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\NovelCatalog.EfPersistence.pdb
+D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog.EfPersistence\obj\Debug\net7.0\ref\NovelCatalog.EfPersistence.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qIoOZfq1mvyQKBkA0sSvqIXfpWIPfqpX4FDkP7/3stgehFl7YGgULwSeIh+32s9PWsnCnfbj6202qCuw1BGOYQ==",
+  "success": true,
+  "projectFilePath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.RazorPagesView\\NovelCatalog.RazorPagesView.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Intel-PC\\.nuget\\packages\\bootstrap\\5.3.2\\bootstrap.5.3.2.nupkg.sha512"
+  ],
+  "logs": []
+}

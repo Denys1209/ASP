@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "MovieCatalog.RazorPagesView/1.0.0": {
+        "dependencies": {
+          "MovieCatalog.Application": "1.0.0",
+          "MovieCatalog.MemoryPersistense": "1.0.0"
+        },
+        "runtime": {
+          "MovieCatalog.RazorPagesView.dll": {}
+        }
+      },
+      "MovieCatalog.Application/1.0.0": {
+        "dependencies": {
+          "MovieCatalog.Domain": "1.0.0"
+        },
+        "runtime": {
+          "MovieCatalog.Application.dll": {}
+        }
+      },
+      "MovieCatalog.Domain/1.0.0": {
+        "runtime": {
+          "MovieCatalog.Domain.dll": {}
+        }
+      },
+      "MovieCatalog.MemoryPersistense/1.0.0": {
+        "dependencies": {
+          "MovieCatalog.Application": "1.0.0"
+        },
+        "runtime": {
+          "MovieCatalog.MemoryPersistense.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MovieCatalog.RazorPagesView/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieCatalog.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieCatalog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieCatalog.MemoryPersistense/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

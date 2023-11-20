@@ -1,0 +1,65 @@
+﻿@model NovelCatalog.MVCView.ViewModels.NovelViewModel
+@{
+    ViewData["Title"] = "Edit Novel";
+}
+<input type="hidden"" name="Id"" value="@Model.Id"/>
+<div class="container">
+
+    <form method="post">
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="text" class="form-control" id="Title" placeholder="Enter title..." name="Title" value="@Model.Title" />
+        </div>
+
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <input type="text" class="form-control" id="Description" placeholder="Enter description..." name="Description" value="@Model.Description" />
+        </div>
+
+        <div class="form-group">
+            <label for="ReleaseDate">Release Date</label>
+            <input type="date" class="form-control" id="ReleaseDate" name="ReleaseDate" value="@Model.ReleaseDate.ToString("yyyy-MM-dd")" />
+        </div>
+
+        <div class="form-group">
+            <label for="HowManyPages">How many pages</label>
+            <input type="number" class="form-control" id="HowManyPages" name="HowManyPages" value="@Model.HowManyPages" />
+        </div>
+
+        <h2>
+            Choose categories
+        </h2>
+        <div class="form-group border-1">
+            @for (int i = 0; i < Model.Categories.Count; i++)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="SelectedCategoryIds" value="@Model.Categories[i].Id" id="@Model.Categories[i].Id" @(Model.SelectedCategoryIds.Contains(Model.Categories[i].Id) ? "checked" : "")>
+                    <label class="form-check-label" for="@Model.Categories[i].Id">
+                        @Model.Categories[i].Name
+                    </label>
+                </div>
+            }
+        </div>
+
+        <h2>
+            Choose novelists
+        </h2>
+        <div class="form-group border-1">
+            @for (int i = 0; i < Model.Novelists.Count; i++)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="SelectedNovelistIds" value="@Model.Novelists[i].Id" id="@Model.Novelists[i].Id" @(Model.SelectedNovelistIds.Contains(Model.Novelists[i].Id) ? "checked" : "")>
+                    <label class="form-check-label" for="@Model.Novelists[i].Id">
+                        @Model.Novelists[i].ToString()
+                    </label>
+                </div>
+            }
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <input type="submit" class="btn btn-primary" value="Update" />
+            </div>
+        </div>
+         
+    </form>
+</div>

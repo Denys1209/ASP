@@ -1,0 +1,11 @@
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\bin\Debug\net7.0\MovieCatalog.Domain.deps.json
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\bin\Debug\net7.0\MovieCatalog.Domain.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\bin\Debug\net7.0\MovieCatalog.Domain.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\obj\Debug\net7.0\MovieCatalog.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\obj\Debug\net7.0\MovieCatalog.Domain.AssemblyInfoInputs.cache
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\obj\Debug\net7.0\MovieCatalog.Domain.AssemblyInfo.cs
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\obj\Debug\net7.0\MovieCatalog.Domain.csproj.CoreCompileInputs.cache
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\obj\Debug\net7.0\MovieCatalog.Domain.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\obj\Debug\net7.0\refint\MovieCatalog.Domain.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\obj\Debug\net7.0\MovieCatalog.Domain.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Domain\obj\Debug\net7.0\ref\MovieCatalog.Domain.dll

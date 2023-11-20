@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "NovelCatalog.RazorPagesView/1.0.0": {
+        "dependencies": {
+          "NovelCatalog.Application": "1.0.0",
+          "NovelCatalog.MemoryPersistense": "1.0.0",
+          "bootstrap": "5.3.2"
+        },
+        "runtime": {
+          "NovelCatalog.RazorPagesView.dll": {}
+        }
+      },
+      "bootstrap/5.3.2": {},
+      "NovelCatalog.Application/1.0.0": {
+        "dependencies": {
+          "NovelCatalog.Domain": "1.0.0"
+        },
+        "runtime": {
+          "NovelCatalog.Application.dll": {}
+        }
+      },
+      "NovelCatalog.Domain/1.0.0": {
+        "runtime": {
+          "NovelCatalog.Domain.dll": {}
+        }
+      },
+      "NovelCatalog.MemoryPersistense/1.0.0": {
+        "dependencies": {
+          "NovelCatalog.Application": "1.0.0"
+        },
+        "runtime": {
+          "NovelCatalog.MemoryPersistense.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NovelCatalog.RazorPagesView/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "bootstrap/5.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m0/GEaLwE35B8P1xScFhwAsQi5o6kWPzOVPdGkoFwv+5YjmbgXFPQai71N5APwRCU52ZO4vHYWJ5DYSqKKgivw==",
+      "path": "bootstrap/5.3.2",
+      "hashPath": "bootstrap.5.3.2.nupkg.sha512"
+    },
+    "NovelCatalog.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NovelCatalog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NovelCatalog.MemoryPersistense/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

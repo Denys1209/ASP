@@ -1,0 +1,36 @@
+﻿@page
+@model NovelCatalog.RazorPagesView.Pages.Novelists.NovelistsIndexModel
+@{
+    ViewData["Title"] = "Novelists";
+}
+
+<div>
+    <div class=" row ">
+        <div class="col-xl-3">
+            <h1>Novelists</h1>
+        </div>
+        <div class="col-xl-3">
+            <a asp-page="./CreateNovelist" class=" btn btn-primary">add a new novelist</a>
+        </div>
+    </div>
+    <form method="post">
+        <div class="row mt-3">
+            @foreach (var novelist in Model.Novelists)
+            {
+                <div class="col-xl-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="@novelist.ImageUrl" alt="@novelist.ImageUrl">
+                        <div class="card-body">
+                            <h5 class="card-title">@novelist.FirstName @novelist.LastName</h5>
+                            <p class="card-text">Date of Birth: @novelist.DateOfBirth.ToShortDateString()</p>
+                            <div>
+                                <a asp-page="./UpdateNovelist" asp-route-id="@novelist.Id" class="btn btn-primary">Update</a>
+                                <button type="submit" asp-page-handler="delete" asp-route-id="@novelist.Id" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </form>
+</div>

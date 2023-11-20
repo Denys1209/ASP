@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "NovelCatalog.MemoryPersistense/1.0.0": {
+        "dependencies": {
+          "NovelCatalog.Application": "1.0.0"
+        },
+        "runtime": {
+          "NovelCatalog.MemoryPersistense.dll": {}
+        }
+      },
+      "NovelCatalog.Application/1.0.0": {
+        "dependencies": {
+          "NovelCatalog.Domain": "1.0.0"
+        },
+        "runtime": {
+          "NovelCatalog.Application.dll": {}
+        }
+      },
+      "NovelCatalog.Domain/1.0.0": {
+        "runtime": {
+          "NovelCatalog.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NovelCatalog.MemoryPersistense/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NovelCatalog.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NovelCatalog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

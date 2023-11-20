@@ -1,0 +1,134 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "NovelCatalog.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "NovelCatalog.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NovelCatalog.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NovelCatalog.Application.dll": {}
+        }
+      },
+      "NovelCatalog.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/NovelCatalog.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NovelCatalog.Domain.dll": {}
+        }
+      },
+      "NovelCatalog.MemoryPersistense/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "NovelCatalog.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NovelCatalog.MemoryPersistense.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NovelCatalog.MemoryPersistense.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NovelCatalog.Application/1.0.0": {
+      "type": "project",
+      "path": "../MovieCatalog.Application/NovelCatalog.Application.csproj",
+      "msbuildProject": "../MovieCatalog.Application/NovelCatalog.Application.csproj"
+    },
+    "NovelCatalog.Domain/1.0.0": {
+      "type": "project",
+      "path": "../MovieCatalog.Domain/NovelCatalog.Domain.csproj",
+      "msbuildProject": "../MovieCatalog.Domain/NovelCatalog.Domain.csproj"
+    },
+    "NovelCatalog.MemoryPersistense/1.0.0": {
+      "type": "project",
+      "path": "../MovieCatalog.MemoryPersistense/NovelCatalog.MemoryPersistense.csproj",
+      "msbuildProject": "../MovieCatalog.MemoryPersistense/NovelCatalog.MemoryPersistense.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "NovelCatalog.MemoryPersistense >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Intel-PC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Denis_2\\C#\\ASP\\MovieCatalog\\MovieCatalog.ConsoleView\\NovelCatalog.ConsoleView.csproj",
+      "projectName": "NovelCatalog.ConsoleView",
+      "projectPath": "D:\\Denis_2\\C#\\ASP\\MovieCatalog\\MovieCatalog.ConsoleView\\NovelCatalog.ConsoleView.csproj",
+      "packagesPath": "C:\\Users\\Intel-PC\\.nuget\\packages\\",
+      "outputPath": "D:\\Denis_2\\C#\\ASP\\MovieCatalog\\MovieCatalog.ConsoleView\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Intel-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "D:\\Denis_2\\C#\\ASP\\MovieCatalog\\MovieCatalog.MemoryPersistense\\NovelCatalog.MemoryPersistense.csproj": {
+              "projectPath": "D:\\Denis_2\\C#\\ASP\\MovieCatalog\\MovieCatalog.MemoryPersistense\\NovelCatalog.MemoryPersistense.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

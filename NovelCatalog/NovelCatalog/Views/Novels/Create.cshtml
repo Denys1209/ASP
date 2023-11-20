@@ -1,0 +1,229 @@
+﻿@model NovelCatalog.MVCView.ViewModels.NovelViewModel
+@{
+    ViewData["Title"] = "Create novel";
+}
+
+<div>
+    <form method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter title..." name="Title" value="@Model.Title" />
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter description..." name="Description" value="@Model.Description" />
+        </div>
+        <div class="form-group">
+            <input type="date" class="form-control" name="ReleaseDate" value="@Model.ReleaseDate" />
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Enter how many pages..." name="HowManyPages" value="@Model.HowManyPages" />
+        </div>
+        <div class="row">
+            <h2 class="col-6">
+                Choose categories
+            </h2>
+            <a class="btn btn-primary col-6" data-bs-toggle="modal" data-bs-target="#chooseCategoryModal">Choose categories</a>
+        </div>
+        <div class="form-group" id="SelectedCategoryIdsContainer">
+            <!-- Hidden input fields for SelectedCategoryIds will be added here -->
+        </div>
+        <div class="form-group border-1">
+            <ul id="ChoosenCatagories">
+            </ul>
+        </div>
+        <div class="row">
+            <h2 class="col-6">
+                Choose novelists
+            </h2>
+            <a class="btn btn-primary col-6" data-bs-toggle="modal" data-bs-target="#chooseNovelistModal">Choose novelists</a>
+        </div>
+        <div class="form-group border-1">
+            <div class="form-group" id="SelectedNovelistIdsContainer">
+                <!-- Hidden input fields for SelectedNovelistIds will be added here -->
+            </div>
+            <ul id="ChoosenNovelists">
+            </ul>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+
+
+
+<!-- Modal for choose category -->
+<div class="modal fade" id="chooseCategoryModal" tabindex="-1" role="dialog" aria-labelledby="chooseCategoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="chooseCategoryModalLabel">Edit Category</h5>
+                <button type="button" class="close" data-dismiss="model" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="filterFormForCategories">
+                    <input type="hidden" id="editId" name="Id" />
+                    <div class="form-group pb-3 row">
+                        <label for="NovelistSearch">search</label>
+                        <input type="text" class="form-control " id="SearchTermForCategory" name="SearchTermForCategory" autocomplete="off">
+                        <button id="filterButtonForCategory" class="btn btn-primary mt-2">search</button>
+                    </div>
+                </form>
+                <div id="categoriesContainer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for choose novelists -->
+<div class="modal fade" id="chooseNovelistModal" tabindex="-1" role="dialog" aria-labelledby="chooseNovelistModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="chooseNovelistModalLabel">Edit Novelists</h5>
+                <button type="button" class="close" data-dismiss="model" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="filterFormForNovelists">
+                    <input type="hidden" id="editId" name="Id" />
+                    <div class="form-group pb-3 row">
+                        <label for="categorySearch">search</label>
+                        <input type="text" class="form-control " id="SearchTermForNovelist" name="SearchTermForNovelist" autocomplete="off">
+                        <button id="filterButtonForNovelists" class="btn btn-primary mt-2">search</button>
+                    </div>
+                </form>
+                <div id="novelistsContainer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        let selectedCategoryIdsUserSide = [];
+        let selectedCategoryIdsWithDisplayInformation = new Map();
+        let selectedNovelistIdsUserSide = [];
+        let selectedNovelistIdsWithDisplayInformation = new Map();
+
+        $(document).ready(function () {
+            $('.close').click(function () {
+                $('#chooseCategoryModal').modal('hide');
+                $('#chooseNovelistModal').modal('hide');
+            });
+
+            $("#filterButtonForCategory").click(function (event) {
+                event.preventDefault();
+                var searchTerm = $('#SearchTermForCategory').val()
+
+                $.get('/Categories/FilterGetJson', { searchTerm: searchTerm })
+                    .done(function (data) {
+                        // Clear the categories container
+                        $("#categoriesContainer").empty();
+
+                        // Loop through the data and create the HTML for each category
+                        $.each(data, function (i, category) {
+                            let categoryHtml = '<div class="form-check">' +
+                                '<input class="form-check-input" type="checkbox" value="' + category.name + '" id="' + category.id + "CategoryId" + '" name="SelectedCategoryIds" >' +
+                                '<label class="form-check-label" for="' + category.id + '">' +
+                                category.name +
+                                '</label>' +
+                                '</div>';
+
+                            $("#categoriesContainer").append(categoryHtml);
+                            $("#" + category.id + "CategoryId").prop("checked", selectedCategoryIdsUserSide.includes(category.id.toString() + "CategoryId"));
+                        });
+
+
+                        $(document).ready(function () {
+
+                            $('.form-check-input[name="SelectedCategoryIds"]').change(function (event) {
+                                let checkBox = event.target;
+
+                                if (checkBox.checked) {
+                                    selectedCategoryIdsUserSide.push(checkBox.id.toString());
+                                    selectedCategoryIdsWithDisplayInformation.set(checkBox.id.toString(), "<li>" + checkBox.value + "</li>");
+
+                                    // Create a new hidden input for this category id
+                                    let newHiddenInput = $('<input>').attr({
+                                        type: 'hidden',
+                                        name: 'SelectedCategoryIds',
+                                        value: checkBox.id.toString().replace("CategoryId", "")  // Remove "CategoryId" from the id
+                                    });
+                                    $('#SelectedCategoryIdsContainer').append(newHiddenInput);
+                                } else {
+                                    selectedCategoryIdsUserSide = selectedCategoryIdsUserSide.filter(id => id !== checkBox.id);
+                                    selectedCategoryIdsWithDisplayInformation.delete(checkBox.id.toString());
+
+                                    // Remove the hidden input for this category id
+                                    $(`input[name="SelectedCategoryIds"][value="${checkBox.id.toString().replace("CategoryId", "")}"]`).remove();
+                                }
+                                $("#ChoosenCatagories").html(Array.from(selectedCategoryIdsWithDisplayInformation.values()).join(" "));
+                            });
+                        });
+
+                    });
+            });
+
+            $("#filterButtonForNovelists").click(function (event) {
+                event.preventDefault();
+                var searchTerm = $('#SearchTermForNovelist').val()
+
+                $.get('/Novelists/FilterGetJson', { searchTerm: searchTerm })
+                    .done(function (data) {
+                        // Clear the categories container
+                        $("#novelistsContainer").empty();
+                        console.log(data);
+
+                        $.each(data, function (i, novelist) {
+                            let novelistHtml = '<div class="form-check">' +
+                                '<input class="form-check-input" type="checkbox" value="' + novelist.firstName + " " + novelist.lastName + '" id="' + novelist.id + "NovelistId" + '" name="SelectedNovelistIds" >' +
+                                '<label class="form-check-label" for="' + novelist.id + '">' +
+                                novelist.firstName + " " + novelist.lastName +
+                                '</label>' +
+                                '</div>';
+
+                            console.log(novelistHtml);
+
+                            $("#novelistsContainer").append(novelistHtml);
+                            $("#" + novelist.id + "NovelistId").prop("checked", selectedCategoryIdsUserSide.includes(novelist.id.toString() + "CategoryId"));
+                        });
+
+
+                        $(document).ready(function () {
+
+                            $('.form-check-input[name="SelectedNovelistIds"]').change(function (event) {
+                                let checkBox = event.target;
+
+                                if (checkBox.checked) {
+                                    selectedNovelistIdsUserSide.push(checkBox.id.toString());
+                                    selectedNovelistIdsWithDisplayInformation.set(checkBox.id.toString(), "<li>" + checkBox.value + "</li>");
+
+                                    // Create a new hidden input for this novelist id
+                                    let newHiddenInput = $('<input>').attr({
+                                        type: 'hidden',
+                                        name: 'SelectedNovelistIds',
+                                        value: checkBox.id.toString().replace("NovelistId", "")  // Remove "NovelistId" from the id
+                                    });
+                                    $('#SelectedNovelistIdsContainer').append(newHiddenInput);
+                                } else {
+                                    selectedNovelistIdsUserSide = selectedNovelistIdsUserSide.filter(id => id !== checkBox.id);
+                                    selectedNovelistIdsWithDisplayInformation.delete(checkBox.id.toString());
+
+                                    // Remove the hidden input for this novelist id
+                                    $(`input[name="SelectedNovelistIds"][value="${checkBox.id.toString().replace("NovelistId", "")}"]`).remove();
+                                } 
+                                $("#ChoosenNovelists").html(Array.from(selectedNovelistIdsWithDisplayInformation.values()).join(" "));
+                            });
+                        });
+
+                    });
+            });
+        });
+
+    </script>
+}
+
+

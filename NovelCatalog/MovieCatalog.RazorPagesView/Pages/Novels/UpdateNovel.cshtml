@@ -1,0 +1,59 @@
+﻿@page "{id:int}"
+@model NovelCatalog.RazorPagesView.Pages.Novels.UpdateNovelModel
+@{
+    ViewData["Title"] = "Update novelist";
+}
+
+<div class="container">
+    <form method="post">
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="text" class="form-control" id="Title" placeholder="Enter title..." name="Title" value="@Model.novel.Title" />
+        </div>
+
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <input type="text" class="form-control" id="Description" placeholder="Enter description..." name="Description" value="@Model.novel.Description" />
+        </div>
+
+        <div class="form-group">
+            <label for="ReleaseDate">Release Date</label>
+            <input type="date" class="form-control" id="ReleaseDate" name="ReleaseDate" value="@Model.novel.ReleaseDate.ToString("yyyy-MM-dd")" />
+        </div>
+
+        <div class="form-group">
+            <label for="HowManyPages">How many pages</label>
+            <input type="number" class="form-control" id="HowManyPages" name="HowManyPapes" value="@Model.novel.HowManyPages" />
+        </div>
+        <h2>
+            Choose categories
+        </h2>
+        <div class="form-group border-1">
+            @foreach (var category in Model.AllCategories)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="CategoriesIds" value="@category.Value" id="@category.Value" @(category.Selected ? "checked" : "")>
+                    <label class="form-check-label" for="@category.Value">
+                        @category.Text
+                    </label>
+                </div>
+            }
+        </div>
+
+        <h2>
+            Choose novelists
+        </h2>
+        <div class="form-group border-1">
+            @foreach (var novelist in Model.AllNovelists)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="NovelistsIds" value="@novelist.Value" id="@novelist.Value" @(novelist.Selected ? "checked" : "")>
+                    <label class="form-check-label" for="@novelist.Value">
+                        @novelist.Text
+                    </label>
+                </div>
+            }
+        </div>
+        <button type="submit" class="btn btn-primary pt-1">Update</button>
+    </form>
+</div>

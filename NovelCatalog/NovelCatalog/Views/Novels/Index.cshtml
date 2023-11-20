@@ -1,0 +1,83 @@
+﻿@model NovelCatalog.MVCView.ViewModels.NovelViewModel
+@{
+    ViewData["Title"] = "Novel";
+}
+
+<div>
+    <div class=" row ">
+        <div class="col-xl-3">
+            <h1>Novels</h1>
+        </div>
+        <div class="col-xl-3">
+            <a asp-action="Create" class=" btn btn-primary">add a new novel</a>
+        </div>
+    </div>
+    <form asp-action="Filter" method="get" asp-all-route-data="@Model.ToDictionaryParameters()">
+        <div class="row">
+            <div class="col-xl-2 ">
+                <div>
+                    <label>Sort by</label>
+                </div>
+                <div>
+                    @Html.DropDownListFor(x => x.SortColumn, Model.SortColumns)
+                </div>
+            </div>
+
+            <div class="col-xl-2 ">
+                <div>
+                    <label>Sort order</label>
+                </div>
+                <div>
+                    @Html.DropDownListFor(x => x.SortDirection, Model.SortDirections)
+                </div>
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Page size</label>
+                @Html.TextBoxFor(x => x.PageSize, new { type = "number", min = "1", max = "100" })
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Page number</label>
+                @Html.TextBoxFor(x => x.CurrentPage, new { type = "number", min = "1", max = Model.TotalPages })
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Search</label>
+                @Html.TextBoxFor(x => x.SearchTerm)
+            </div>
+
+            <button type="submit" class="btn btn-primary col-xl-2 ">
+                Filter
+            </button>
+        </div>
+    </form>
+
+
+    <form method="post">
+
+        <div class="row mt-3">
+            @foreach (var novel in Model.Novels)
+            {
+
+                <div class="col-xl-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body ">
+                            <h5 class="card-title">@novel.Title</h5>
+                            <p class="card-text">@novel.Description</p>
+                            <p class="card-text">Release Date: @novel.ReleaseDate.ToShortDateString()</p>
+                            <p class="card-text">Pages: @novel.HowManyPages </p>
+                            <p class="card-text">Lenght: @novel.Categories.ToList().Count</p>
+                            <p class="card-text">Categories: @novel.Categories.ToList().Aggregate("", (cur, next) => cur+next.Name+", " )</p>
+                            <p class="card-text">Novelists: @novel.Novelists.ToList().Aggregate("", (cur, next) => cur+next.FirstName+" "+next.LastName + ", " )</p>
+                            <div class="card-body">
+                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@novel?.Id">Update</a>
+                                <button type="submit" class="btn btn-danger" asp-action="Delete" asp-route-id="@novel?.Id">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\bin\Debug\net7.0\MovieCatalog.MemoryPersistense.deps.json
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\bin\Debug\net7.0\MovieCatalog.MemoryPersistense.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\bin\Debug\net7.0\MovieCatalog.MemoryPersistense.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\bin\Debug\net7.0\MovieCatalog.Application.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\bin\Debug\net7.0\MovieCatalog.Domain.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\bin\Debug\net7.0\MovieCatalog.Application.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\bin\Debug\net7.0\MovieCatalog.Domain.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\MovieCatalog.MemoryPersistense.csproj.AssemblyReference.cache
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\MovieCatalog.MemoryPersistense.GeneratedMSBuildEditorConfig.editorconfig
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\MovieCatalog.MemoryPersistense.AssemblyInfoInputs.cache
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\MovieCatalog.MemoryPersistense.AssemblyInfo.cs
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\MovieCatalog.MemoryPersistense.csproj.CoreCompileInputs.cache
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\MovieCatalog.MemoryPersistense.csproj.CopyComplete
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\MovieCatalog.MemoryPersistense.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\refint\MovieCatalog.MemoryPersistense.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\MovieCatalog.MemoryPersistense.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.MemoryPersistense\obj\Debug\net7.0\ref\MovieCatalog.MemoryPersistense.dll

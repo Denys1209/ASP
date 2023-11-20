@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\MovieCatalog.RazorPagesView.props" />
+</Project>

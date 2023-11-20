@@ -1,0 +1,15 @@
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\bin\Debug\net7.0\MovieCatalog.Application.deps.json
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\bin\Debug\net7.0\MovieCatalog.Application.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\bin\Debug\net7.0\MovieCatalog.Application.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\bin\Debug\net7.0\MovieCatalog.Domain.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\bin\Debug\net7.0\MovieCatalog.Domain.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\MovieCatalog.Application.csproj.AssemblyReference.cache
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\MovieCatalog.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\MovieCatalog.Application.AssemblyInfoInputs.cache
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\MovieCatalog.Application.AssemblyInfo.cs
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\MovieCatalog.Application.csproj.CoreCompileInputs.cache
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\MovieCatalog.Application.csproj.CopyComplete
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\MovieCatalog.Application.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\refint\MovieCatalog.Application.dll
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\MovieCatalog.Application.pdb
+D:\Denis_2\C#\ASP\MovieCatalog\MovieCatalog.Application\obj\Debug\net7.0\ref\MovieCatalog.Application.dll

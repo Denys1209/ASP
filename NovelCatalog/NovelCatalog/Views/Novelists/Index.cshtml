@@ -1,0 +1,213 @@
+﻿@model NovelCatalog.MVCView.ViewModels.NovelistsViewModel
+@{
+    ViewData["Title"] = "Novelists";
+}
+
+<div>
+    <div class="row">
+        <div class="col-xl-3">
+            <h1>Novelists</h1>
+        </div>
+        <div class="col-xl-3">
+            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">Add a new novelist</a>
+        </div>
+    </div>
+    <form asp-action="Filter" method="get" asp-all-route-data="@Model.ToDictionaryParameters()">
+        <div class="row">
+            <div class="col-xl-2 ">
+                <div>
+                    <label>Sort by</label>
+                </div>
+                <div>
+                    @Html.DropDownListFor(x => x.SortColumn, Model.SortColumns)
+                </div>
+            </div>
+
+            <div class="col-xl-2 ">
+                <div>
+                    <label>Sort order</label>
+                </div>
+                <div>
+                    @Html.DropDownListFor(x => x.SortDirection, Model.SortDirections)
+                </div>
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Page size</label>
+                @Html.TextBoxFor(x => x.PageSize, new { type = "number", min = "1", max = "100" })
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Page number</label>
+                @Html.TextBoxFor(x => x.CurrentPage, new { type = "number", min = "1", max = Model.TotalPages })
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Search</label>
+                @Html.TextBoxFor(x => x.SearchTerm)
+            </div>
+
+            <button type="submit" class="btn btn-primary col-xl-2 ">
+                Filter
+            </button>
+        </div>
+    </form>
+
+    <form method="post">
+        <div class="row mt-3">
+            @foreach (var novelist in Model.Novelists)
+            {
+                <div class="col-xl-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="@novelist.ImageUrl" alt="@novelist.ImageUrl">
+                        <div class="card-body">
+                            <h5 class="card-title">@novelist.FirstName @novelist.LastName</h5>
+                            <p class="card-text">Date of Birth: @novelist.DateOfBirth.ToShortDateString()</p>
+                            <div>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@novelist.Id">Update</a>
+                                <button type="submit" asp-action="Delete" asp-route-id="@novelist.Id" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </form>
+</div>
+
+
+
+
+<!-- Modal for edit -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit novelist</h5>
+                <button type="button" class="close" data-dismiss="model" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <input type="hidden" id="editId" name="Id" />
+                    <div class="form-group pb-3">
+                        <label for="editFirstName" class="col-sm-2 col-form-label">First Name</label>
+                        <input type="text" class="form-control" id="editFirstName" name="FirstName" >
+                    </div>
+                    <div class="form-group pb-3">
+                        <label for="editLastName" class="col-sm-2 col-form-label">Last Name</label>
+                        <input type="text" class="form-control" id="editLastName" name="LastName" >
+                    </div>
+                    <div class="form-group pb-3">
+                        <label for="editDateOfBirth">Date of birth</label>
+                        <input type="date" class="form-control" id="editDateOfBirth" name="DateOfBirth">
+                    </div>
+                    <div class="form-group pb-3">
+                        <label for="editImageUrl">Image url</label>
+                        <input type="text" class="form-control" id="editImageUrl" name="ImageUrl">
+                    </div>
+                    <button type="submit" class="btn btn-primary p-2">Save changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for create -->
+<div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createModalLabel">Create novelist</h5>
+                <button type="button" class="close" data-dismiss="model" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="createForm">
+                    <div class="form-group pb-3">
+                        <input type="hidden" id="editId" name="Id" />
+                        <div class="form-group pb-3">
+                            <label for="createFirstName" class="col-sm-2 col-form-label">First Name</label>
+                            <input type="text" class="form-control" id="createFirstName" name="FirstName">
+                        </div>
+                        <div class="form-group pb-3">
+                            <label for="createLastName" class="col-sm-2 col-form-label">Last Name</label>
+                            <input type="text" class="form-control" id="createLastName" name="LastName">
+                        </div>
+                        <div class="form-group pb-3">
+                            <label for="createDateOfBirth">Date of birth</label>
+                            <input type="date" class="form-control" id="createDateOfBirth" name="DateOfBirth">
+                        </div>
+                        <div class="form-group pb-3">
+                            <label for="createImageUrl">Image url</label>
+                            <input type="text" class="form-control" id="createImageUrl" name="ImageUrl">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary p-2">create a new novelist</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.close').click(function () {
+                $('#editModal').modal('hide');
+                $('#createModal').modal('hide');
+            });
+
+            $('#editModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                var id = button.attr('data-id');
+
+                $.get('/Novelists/Edit', { id: id })
+                    .done(function (data) {
+                        $('#editId').val(data.id);
+                        $('#editFirstName').val(data.firstName);
+                        $('#editLastName').val(data.lastName);
+                        $('#editDateOfBirth').val(data.dateOfBirth);
+                        $('#editImageUrl').val(data.imageUrl);
+                    });
+            });
+
+            $('#editForm').on('submit', function (event) {
+                event.preventDefault();
+                // Get form data
+                var formData = $(this).serialize();
+                $.post('/Novelists/Edit', formData)
+                    .done(function () {
+                        // Close the modal
+                        $('#editModal').modal('hide');
+
+                        // Refresh the categories list
+                        // You could use AJAX here too to refresh the list without reloading the page
+                        location.reload();
+                    });
+            });
+
+            $('#createForm').on('submit', function (event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+                $.post('/Novelists/Create', formData)
+                    .done(function () {
+                        // Close the modal
+                        $('#createModal').modal('hide');
+
+                        // Refresh the categories list
+                        // You could use AJAX here too to refresh the list without reloading the page
+                        location.reload();
+                    });
+
+
+            });
+
+
+        });
+    </script>
+}
+
