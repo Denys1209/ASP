@@ -1,0 +1,14 @@
+﻿@model MovieCatalog.Domain.Models.Actor
+
+@{
+    ViewData["Title"] = "Edit Actor";
+}
+
+<form method="post">
+    <input class="form-control" type="text" placeholder="Enter first name..." name="FirstName" value="@Model.FirstName"/>
+    <input class="form-control" type="text" placeholder="Enter last name..." name="LastName" value="@Model.LastName"/>
+    <input class="form-control" type="date" name="DateOfBirth" value="@Model.DateOfBirth.ToString("yyyy-MM-dd")"/>
+
+    <input class="btn btn-outline-primary" type="submit" value="Edit">
+    <a class="btn btn-outline-secondary" href="/Actors/Index">Cancel</a>
+</form>

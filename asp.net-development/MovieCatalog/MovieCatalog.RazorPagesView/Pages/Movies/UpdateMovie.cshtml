@@ -1,0 +1,32 @@
+﻿@page "{id:int}"
+@model MovieCatalog.RazorPagesView.Pages.Movies.UpdateMovieModel
+@{
+    ViewData["Title"] = "Update Actor";
+}
+
+<div class="text-center">
+    <form method="post">
+        <p>
+            <input type="text" placeholder="Enter title..." name="Title" value="@Model.Movie.Title" />
+        </p>
+
+        <p>
+            <input type="text" placeholder="Enter description..." name="Description" value="@Model.Movie.Description" />
+        </p>
+
+        <p>
+            <input type="date" name="ReleaseDate" value="@Model.Movie.ReleaseDate.ToString("yyyy-MM-dd")" />
+        </p>
+
+        <p>
+            <select asp-items="@Model.Categories" asp-for="CategoryId">
+            </select>
+        </p>
+
+        <p>
+            <select asp-items="@Model.Actors" asp-for="ActorIds" multiple="multiple"></select>
+        </p>
+
+        <input type="submit" value="Update" />
+    </form>
+</div>

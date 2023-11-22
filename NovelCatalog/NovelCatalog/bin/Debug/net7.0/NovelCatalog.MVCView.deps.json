@@ -12,6 +12,7 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.13",
+          "NovelCatalog.Application": "1.0.0",
           "NovelCatalog.Domain": "1.0.0",
           "NovelCatalog.EfPersistence": "1.0.0"
         },

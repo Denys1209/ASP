@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "2SROwXuJAQpvTR0cf7TceMN4+7Wu9rzyK/6Ch++REgE=",
+  "Source": "NovelCatalog.WebApi",
+  "BasePath": "_content/NovelCatalog.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

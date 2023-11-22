@@ -1,0 +1,12 @@
+﻿@model MovieCatalog.MVCView.ViewModels.CategoriesViewModel
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<div class="text-center">
+    <h1>Categories</h1>
+    @* <a class="btn btn-primary" asp-action="Create">Create</a> *@
+
+    @await Html.PartialAsync("~/Views/Shared/PaginatedFilteredTable.cshtml", Model)
+</div>

@@ -1,0 +1,24 @@
+﻿@page
+@model MovieCatalog.RazorPagesView.Pages.Categories.CategoriesIndexModel
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<div class="text-center">
+    <form method="post">
+        <h1>Categories</h1>
+        <a asp-page="./CreateCategory">Create</a>
+        <ul>
+            @foreach (var category in Model.Categories)
+            {
+                <li>
+                    @category.Name
+                    <a asp-page="./UpdateCategory" asp-route-id="@category.Id">
+                        Update
+                    </a>
+                    <button type="submit" asp-page-handler="delete" asp-route-id="@category.Id">Delete</button>
+                </li>
+            }
+        </ul>
+    </form>
+</div>

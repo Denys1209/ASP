@@ -230,6 +230,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj": {
+                "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj"
+              },
               "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj": {
                 "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj"
               },

@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MovieCatalog.Application\NovelCatalog.Application.csproj" />
     <ProjectReference Include="..\MovieCatalog.Domain\NovelCatalog.Domain.csproj" />
     <ProjectReference Include="..\NovelCatalog.EfPersistence\NovelCatalog.EfPersistence.csproj" />
   </ItemGroup>

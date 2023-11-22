@@ -1,0 +1,14 @@
+﻿@page
+@model MovieCatalog.RazorPagesView.Pages.Categories.CreateCategoryModel
+@{
+    ViewData["Title"] = "Create Category";
+}
+
+<div class="text-center">
+    <form method="post" asp-page="/CreateCategory">
+        <p>
+            <input type="text" placeholder="Input name" name="Name" />
+        </p>
+        <input type="submit" value="Create" />
+    </form>
+</div>

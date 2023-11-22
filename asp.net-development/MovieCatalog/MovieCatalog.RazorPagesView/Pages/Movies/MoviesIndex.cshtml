@@ -1,0 +1,38 @@
+﻿@page
+@model MovieCatalog.RazorPagesView.Pages.Movies.MoviesIndexModel
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<div class="text-center">
+    <h1>Movies</h1>
+    <a asp-page="./CreateMovie">Create</a>
+    <form method="post">
+        <table>
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Description</td>
+                    <td>Release Date</td>
+                    <td>Category</td>
+                    <td>Actors</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            @foreach (var movie in Model.Movies)
+            {
+                <tr>
+                    <td>@movie.Title</td>
+                    <td>@movie.Description</td>
+                    <td>@movie.ReleaseDate.ToShortDateString()</td>
+                    <td>@movie.Category?.Name</td>
+                    <td>@string.Join(", ", movie?.Actors ?? Enumerable.Empty<Domain.Models.Actor>())</td>
+                    <td>
+                        <a asp-page="./UpdateMovie" asp-route-id="@movie?.Id">Update</a>
+                        <button type="submit" asp-page-handler="delete" asp-route-id="@movie?.Id">Delete</button>
+                    </td>
+                </tr>
+            }
+        </table>
+    </form>
+</div>
