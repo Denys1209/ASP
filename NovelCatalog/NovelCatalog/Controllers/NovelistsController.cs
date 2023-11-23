@@ -97,5 +97,15 @@ namespace NovelCatalog.MVCView.Controllers
             return Json(novelists);
 
         }
+        public async Task<IActionResult> GetAllByIds(string ids, CancellationToken cancellationToken)
+        {
+            string[] idStirngArray = ids.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var intIds = new List<int>(Array.ConvertAll(idStirngArray, int.Parse));
+
+            var novelists = await _novelistsService.GetAllModelsByIdsAsync(intIds, cancellationToken);
+
+            return Json(novelists);
+
+        }
     }
 }

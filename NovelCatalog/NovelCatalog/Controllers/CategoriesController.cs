@@ -96,5 +96,16 @@ namespace NovelCatalog.MVCView.Controllers
             return Json(categories);
 
         }
+
+        public async Task<IActionResult> GetAllByIds(string ids, CancellationToken cancellationToken)
+        {
+            string[] idStirngArray = ids.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            var intIds = new List<int>(Array.ConvertAll(idStirngArray, int.Parse));
+
+            var categories = await _categoriesService.GetAllModelsByIdsAsync(intIds, cancellationToken);
+
+            return Json(categories);
+
+        }
     }
 }

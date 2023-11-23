@@ -1,4 +1,5 @@
 using NovelCatalog.MVCView.Extensions;
+using System.Text.Json.Serialization;
 
 namespace NovelCatalog
 {
@@ -11,6 +12,11 @@ namespace NovelCatalog
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            //builder.Services.AddControllersWithViews().AddJsonOptions(options =>
+            //{
+            //    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+            //    options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+            //});
 
             builder.Services.AddApplication(builder.Configuration);
 

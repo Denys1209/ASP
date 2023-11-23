@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kE6yZ9L1coAXJxVSKlnMibF/UKWqfKdV0YHtDcISiEw=",
+  "Source": "MovieCatalog.WebApiView",
+  "BasePath": "_content/MovieCatalog.WebApiView",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

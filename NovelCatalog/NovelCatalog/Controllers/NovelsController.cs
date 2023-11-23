@@ -149,5 +149,7 @@ namespace NovelCatalog.MVCView.Controllers
                 SortDirection = dto.SortOrder == SortOrder.Asc ? "Ascending" : "Descending"
             };
         }
+
+      
     }
 }

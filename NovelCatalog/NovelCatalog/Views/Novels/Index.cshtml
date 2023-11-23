@@ -67,7 +67,6 @@
                             <p class="card-text">@novel.Description</p>
                             <p class="card-text">Release Date: @novel.ReleaseDate.ToShortDateString()</p>
                             <p class="card-text">Pages: @novel.HowManyPages </p>
-                            <p class="card-text">Lenght: @novel.Categories.ToList().Count</p>
                             <p class="card-text">Categories: @novel.Categories.ToList().Aggregate("", (cur, next) => cur+next.Name+", " )</p>
                             <p class="card-text">Novelists: @novel.Novelists.ToList().Aggregate("", (cur, next) => cur+next.FirstName+" "+next.LastName + ", " )</p>
                             <div class="card-body">
