@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NovelCatalog",
+    "\\NovelCatalog\\NovelCatalog",
+    "\\NovelCatalog\\NovelCatalog\\Views",
+    "\\NovelCatalog\\NovelCatalog\\Views\\Novels"
   ],
-  "SelectedNode": "\\MovieCatalog.sln",
+  "SelectedNode": "\\NovelCatalog\\NovelCatalog\\Views\\Novels\\Edit.cshtml",
   "PreviewInSolutionExplorer": false
 }

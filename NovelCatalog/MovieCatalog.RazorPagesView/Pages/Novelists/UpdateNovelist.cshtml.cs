@@ -31,8 +31,10 @@ namespace NovelCatalog.RazorPagesView.Pages.Novelists
         {
             if (string.IsNullOrWhiteSpace(imageUrl))
                 imageUrl = "https://www.shutterstock.com/image-photo/young-female-novelist-baggy-sweater-260nw-1864435981.jpg";
+            
             var novelist = new Novelist { Id = novelists.Id, FirstName = firstName, LastName = lastName, DateOfBirth = dateOfBirth, ImageUrl = imageUrl };
             await _novelistService.UpdateAsync(novelist, cancellationToken);
+            
             return Redirect("../NovelistsIndex");
         }
     }

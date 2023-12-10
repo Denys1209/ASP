@@ -13,6 +13,46 @@
             <a asp-page="./CreateNovelist" class=" btn btn-primary">add a new novelist</a>
         </div>
     </div>
+    <form asp-action="Filter" method="get" asp-all-route-data="@Model.ToDictionaryParameters()">
+        <div class="row">
+            <div class="col-xl-2 ">
+                <div>
+                    <label>Sort by</label>
+                </div>
+                <div>
+                    @Html.DropDownListFor(x => x.SortColumn, Model.SortColumns)
+                </div>
+            </div>
+
+            <div class="col-xl-2 ">
+                <div>
+                    <label>Sort order</label>
+                </div>
+                <div>
+                    @Html.DropDownListFor(x => x.SortDirection, Model.SortDirections)
+                </div>
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Page size</label>
+                @Html.TextBoxFor(x => x.PageSize, new { type = "number", min = "1", max = "100" })
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Page number</label>
+                @Html.TextBoxFor(x => x.CurrentPage, new { type = "number", min = "1", max = Model.TotalPages })
+            </div>
+
+            <div class="col-xl-2 ">
+                <label>Search</label>
+                @Html.TextBoxFor(x => x.SearchTerm)
+            </div>
+
+            <button type="submit" class="btn btn-primary col-xl-2 ">
+                Filter
+            </button>
+        </div>
+    </form>
     <form method="post">
         <div class="row mt-3">
             @foreach (var novelist in Model.Novelists)

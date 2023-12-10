@@ -9,69 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NovelCatalog.RazorPagesView
 build_property.RootNamespace = NovelCatalog.RazorPagesView
-build_property.ProjectDir = D:\Denis_2\C#\ASP\NovelCatalog\MovieCatalog.RazorPagesView\
+build_property.ProjectDir = C:\Users\PC\Source\Repos\Denys1209\ASP\NovelCatalog\MovieCatalog.RazorPagesView\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Denis_2\C#\ASP\NovelCatalog\MovieCatalog.RazorPagesView
+build_property.MSBuildProjectDirectory = C:\Users\PC\Source\Repos\Denys1209\ASP\NovelCatalog\MovieCatalog.RazorPagesView
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Categories/CategoriesIndex.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Categories/CategoriesIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xDYXRlZ29yaWVzSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Categories/CreateCategory.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Categories/CreateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xDcmVhdGVDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Categories/UpdateCategory.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Categories/UpdateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc1xVcGRhdGVDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Error.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Index.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novelists/CreateNovelist.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novelists/CreateNovelist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm92ZWxpc3RzXENyZWF0ZU5vdmVsaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novelists/NovelistsIndex.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novelists/NovelistsIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm92ZWxpc3RzXE5vdmVsaXN0c0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novelists/UpdateNovelist.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novelists/UpdateNovelist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm92ZWxpc3RzXFVwZGF0ZU5vdmVsaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novels/CreateNovel.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novels/CreateNovel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm92ZWxzXENyZWF0ZU5vdmVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novels/NovelsIndex.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novels/NovelsIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm92ZWxzXE5vdmVsc0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novels/UpdateNovel.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Novels/UpdateNovel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm92ZWxzXFVwZGF0ZU5vdmVsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/_ViewImports.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/_ViewStart.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Shared/_Layout.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/MovieCatalog.RazorPagesView/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7rfh74ehja

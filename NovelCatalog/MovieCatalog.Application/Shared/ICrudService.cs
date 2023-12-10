@@ -10,5 +10,5 @@ public interface ICrudService<TModel> where TModel : Model
 	Task DeleteAsync(int id, CancellationToken cancellationToken);
 	Task<TModel?> GetAsync(int id, CancellationToken cancellationToken);
 	Task<PaginatedCollection<TModel>> GetAllAsync(FilterPaginationDto dto, CancellationToken cancellationToken);
-	Task<IReadOnlyCollection<TModel?>> GetAllModelsByIdsAsync(List<int> ids, CancellationToken cancellationToken);
+	Task<IReadOnlyCollection<TModel>> GetAllModelsByIdsAsync(List<int> ids, CancellationToken cancellationToken);
 }

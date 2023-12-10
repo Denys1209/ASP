@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NovelCatalog.MVCView", "Nov
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NovelCatalog.EfPersistence", "NovelCatalog.EfPersistence\NovelCatalog.EfPersistence.csproj", "{2BF8EF67-1E50-42E6-A20B-1EE47123A7A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovelCatalog.WebApi", "NovelCatalog.WebApi\NovelCatalog.WebApi.csproj", "{2165C02B-9883-440A-A29C-DF33E187F78D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NovelCatalog.WebApi", "NovelCatalog.WebApi\NovelCatalog.WebApi.csproj", "{2165C02B-9883-440A-A29C-DF33E187F78D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NovelCatalog.RazorPagesView", "MovieCatalog.RazorPagesView\NovelCatalog.RazorPagesView.csproj", "{8F319880-C8BA-4F9A-9F58-76BA2379E1AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2165C02B-9883-440A-A29C-DF33E187F78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2165C02B-9883-440A-A29C-DF33E187F78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2165C02B-9883-440A-A29C-DF33E187F78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F319880-C8BA-4F9A-9F58-76BA2379E1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F319880-C8BA-4F9A-9F58-76BA2379E1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F319880-C8BA-4F9A-9F58-76BA2379E1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F319880-C8BA-4F9A-9F58-76BA2379E1AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

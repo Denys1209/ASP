@@ -27,26 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Intel-PC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Source\\Repos\\Denys1209\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj",
       "projectName": "NovelCatalog.Application",
-      "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj",
-      "packagesPath": "C:\\Users\\Intel-PC\\.nuget\\packages\\",
-      "outputPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Application\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Source\\Repos\\Denys1209\\ASP\\NovelCatalog\\MovieCatalog.Application\\NovelCatalog.Application.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\source\\repos\\Denys1209\\ASP\\NovelCatalog\\MovieCatalog.Application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Intel-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,8 +53,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj": {
-              "projectPath": "D:\\Denis_2\\C#\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj"
+            "C:\\Users\\PC\\Source\\Repos\\Denys1209\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj": {
+              "projectPath": "C:\\Users\\PC\\Source\\Repos\\Denys1209\\ASP\\NovelCatalog\\MovieCatalog.Domain\\NovelCatalog.Domain.csproj"
             }
           }
         }
@@ -91,7 +84,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

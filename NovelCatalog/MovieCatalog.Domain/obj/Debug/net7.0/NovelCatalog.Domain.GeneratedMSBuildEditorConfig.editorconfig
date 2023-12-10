@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NovelCatalog.Domain
-build_property.ProjectDir = D:\Denis_2\C#\ASP\NovelCatalog\MovieCatalog.Domain\
+build_property.ProjectDir = C:\Users\PC\Source\Repos\Denys1209\ASP\NovelCatalog\MovieCatalog.Domain\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -19,7 +19,7 @@ public abstract class PaginatedFilteredViewModel
     public string SortDirection { get; set; } = "Descending";
     public string Sorting => $"{SortColumn}_{SortDirection}";
 
-    public int CurrentPage { get; set; }
+    public int CurrentPage { get; set; } = 1;
     public int PageSize { get; set; } = 50;
     public int TotalPages => PageSize == 0 ? 0 : (int)Math.Ceiling(Total / (decimal)PageSize);
 
@@ -34,16 +34,12 @@ public abstract class PaginatedFilteredViewModel
         new SelectListItem("Descending", "Descending", true)
     };
 
-    protected PaginatedFilteredViewModel(Type modelType, Type controllerType)
+    protected PaginatedFilteredViewModel(Type modelType)
     {
         if (!typeof(Model).IsAssignableFrom(modelType))
             throw new ArgumentException($"Type '{modelType}' is not a model.");
 
-        if (!typeof(Controller).IsAssignableFrom(controllerType))
-            throw new ArgumentException($"Type '{controllerType}' is not a controller.");
-
         _modelType = modelType;
-        ControllerName = controllerType.Name.Replace("Controller", string.Empty);
         ActionName = "Index";
     }
 

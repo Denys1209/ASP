@@ -19,7 +19,7 @@ public sealed class NovelRepository : CrudRepository<Novel>, INovelRepository
         return await DbContext.Set<Novel>().Include(n => n.Categories).Include(n => n.Novelists).FirstAsync((n) => n.Id == id, cancellationToken);
     }
 
-    public async Task<PaginatedCollection<Novel>> GetAllAsync(FilterPaginationDto dto, CancellationToken cancellationToken)
+    public new async Task<PaginatedCollection<Novel>> GetAllAsync(FilterPaginationDto dto, CancellationToken cancellationToken)
     {
         var skip = (dto.PageNumber - 1) * dto.PageSize;
         var take = dto.PageSize;

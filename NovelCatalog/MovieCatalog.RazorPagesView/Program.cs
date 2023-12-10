@@ -2,25 +2,21 @@ using NovelCatalog.Application.Novelists;
 using NovelCatalog.Application.Categories;
 using NovelCatalog.Application.Novel;
 using NovelCatalog.MemoryPersistense.Repositories;
+using NovelCatalog.MVCView.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 
-builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
-builder.Services.AddTransient<INovelistRepository, NovelistRepository>();
-builder.Services.AddTransient<INovelRepository, NovelRepository>();
-
-builder.Services.AddTransient<ICategoryService, CategoryService>();
-builder.Services.AddTransient<INovelistService, NovelistService>();
-builder.Services.AddTransient<INovelService, NovelService>();
+builder.Services.AddControllersWithViews();
+builder.Services.AddApplication(builder.Configuration);
 
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
 {
-	app.UseExceptionHandler("/Error");
-	app.UseHsts();
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
 }
 
 app.UseHttpsRedirection();

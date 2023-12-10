@@ -41,11 +41,13 @@ namespace NovelCatalog.RazorPagesView.Pages.Novels
             this.novel = novel;
 
             var categories = await _categoryService.GetAllAsync(new Domain.FilterPaginationDto(string.Empty), cancellationToken);
-            var novelists = await _novelistService.GetAllAsync(new Domain.FilterPaginationDto(string.Empty), cancellationToken);
             List<string> categoriesIds = novel.Categories.Select(c => c.Id.ToString()).ToList();
-            List<string>  novelistsIds = novel.Novelists.Select(c => c.Id.ToString()).ToList();
             AllCategories = categories.Select(c => new SelectListItem(c.Name, c.Id.ToString(), categoriesIds.Contains(c.Id.ToString()))).ToList();
+
+            var novelists = await _novelistService.GetAllAsync(new Domain.FilterPaginationDto(string.Empty), cancellationToken);
+            List<string>  novelistsIds = novel.Novelists.Select(c => c.Id.ToString()).ToList();
             AllNovelists = novelists.Select(c => new SelectListItem(c.ToString(), c.Id.ToString(), novelistsIds.Contains(c.Id.ToString()))).ToList();
+
            
 
             return Page();

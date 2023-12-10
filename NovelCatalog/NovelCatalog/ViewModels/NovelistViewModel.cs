@@ -1,23 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using NovelCatalog.Domain.Models;
+using NovelCatalog.MVCView.ViewModels.Shared;
 
 namespace NovelCatalog.MVCView.ViewModels;
 
-public sealed class NovelistsViewModel
+public sealed class NovelistsViewModel : PaginatedFilteredViewModel
 {
+    public NovelistsViewModel() : base(typeof(Novelist))
+    {
+    }
+
     public IReadOnlyCollection<Novelist> Novelists { get; set; } = null!;
     public int TotalNovelists { get; set; }
 
-    public string SortColumn { get; set; } = null!;
-    public string SortDirection { get; set; } = null!;
 
-    public int CurrentPage { get; set; }
-    public int PageSize { get; set; }
-    public int TotalPages => PageSize == 0 ? 0 : (int)Math.Ceiling(TotalNovelists / (decimal)PageSize);
-
-    public string SearchTerm { get; set; } = string.Empty;
-
-    public IReadOnlyCollection<SelectListItem> SortColumns { get; set; } = new[]
+    public override IEnumerable<SelectListItem> SortColumns => new[]
     {
         new SelectListItem("", "Id", true),
         new SelectListItem("First Name", "FirstName"),
@@ -25,11 +22,12 @@ public sealed class NovelistsViewModel
         new SelectListItem("Date of Birth", "DateOfBirth")
     };
 
-    public IReadOnlyCollection<SelectListItem> SortDirections { get; set; } = new[]
+    public override IEnumerable<string> Columns => throw new NotImplementedException();
+
+    public override string GetColumnValue(Model model, string column)
     {
-        new SelectListItem("Ascending", "Ascending"),
-        new SelectListItem("Descending", "Descending", true)
-    };
+        throw new NotImplementedException();
+    }
 
     public IDictionary<string, string> ToDictionaryParameters()
     {

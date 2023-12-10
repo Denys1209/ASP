@@ -9,73 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NovelCatalog.MVCView
 build_property.RootNamespace = NovelCatalog.MVCView
-build_property.ProjectDir = D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog\
+build_property.ProjectDir = C:\Users\PC\Source\Repos\Denys1209\ASP\NovelCatalog\NovelCatalog\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Denis_2\C#\ASP\NovelCatalog\NovelCatalog
+build_property.MSBuildProjectDirectory = C:\Users\PC\Source\Repos\Denys1209\ASP\NovelCatalog\NovelCatalog
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Categories/Create.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Categories/Edit.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Categories/Index.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Home/Index.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Home/Privacy.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Novelists/Create.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Novelists/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92ZWxpc3RzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Novelists/Edit.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Novelists/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92ZWxpc3RzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Novelists/Index.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Novelists/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92ZWxpc3RzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Novels/Create.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Novels/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92ZWxzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Novels/Edit.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Novels/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92ZWxzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Novels/Index.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Novels/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92ZWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Shared/Error.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/_ViewImports.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/_ViewStart.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Denis_2/C\#/ASP/NovelCatalog/NovelCatalog/Views/Shared/_Layout.cshtml]
+[C:/Users/PC/Source/Repos/Denys1209/ASP/NovelCatalog/NovelCatalog/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5hwbl1a44e

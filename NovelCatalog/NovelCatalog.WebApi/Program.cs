@@ -1,5 +1,4 @@
 using NovelCatalog.WebApi.Extensions;
-using NovelCatalog.WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
